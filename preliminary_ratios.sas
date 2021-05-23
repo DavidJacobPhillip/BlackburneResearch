@@ -4,7 +4,7 @@ options errorabend;
 libname home '.';
 
 * includes the macro file;
-%include '/home/oregonstate/davjp/2021Research/macros.sas';
+%include './macros/get_compa_data.sas';
 
 * Running the macro;
 
@@ -65,7 +65,7 @@ run;
 
 
 /* proc export data=ratios
-    outfile = "/home/oregonstate/davjp/2021Research/ratios.csv"
+    outfile = "./Ratios.csv"
     dbms = csv REPLACE;
 run; */
 
