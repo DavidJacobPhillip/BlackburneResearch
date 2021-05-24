@@ -85,10 +85,10 @@ proc print data=ratios;
 run;
 
 
-/* proc export data=ratios
+proc export data=ratios
     outfile = "ratios.csv"
     dbms = csv REPLACE;
-run; */
+run; 
 
 
 
