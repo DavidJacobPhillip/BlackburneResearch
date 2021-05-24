@@ -65,7 +65,7 @@ run;
 
 
 /* proc export data=ratios
-    outfile = "./Ratios.csv"
+    outfile = "Ratios.csv"
     dbms = csv REPLACE;
 run; */
 
