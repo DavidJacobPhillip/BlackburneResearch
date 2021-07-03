@@ -1,0 +1,76 @@
+                                 The SAS System                                1
+                                               Friday, July  2, 2021 07:33:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+             Number of Observations Read                      18518
+             Number of Observations Used                      16409
+             Number of Observations with Missing Values        2109
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     2      132.11275       66.05637    3417.24    <.0001
+ Error                 16406      317.13343        0.01933                     
+ Corrected Total       16408      449.24618                                    
+
+
+              Root MSE              0.13903    R-Square     0.2941
+              Dependent Mean        0.10617    Adj R-Sq     0.2940
+              Coeff Var           130.95059                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1       -0.02291        0.00190     -12.04      <.0001
+     PTCF           1        1.00269        0.01218      82.30      <.0001
+     PTACC          1        0.69660        0.01484      46.94      <.0001
+                                 The SAS System                                2
+                                               Friday, July  2, 2021 07:33:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+             Number of Observations Read                      18518
+             Number of Observations Used                      16409
+             Number of Observations with Missing Values        2109
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     8      135.06329       16.88291     881.27    <.0001
+ Error                 16400      314.18289        0.01916                     
+ Corrected Total       16408      449.24618                                    
+
+
+              Root MSE              0.13841    R-Square     0.3006
+              Dependent Mean        0.10617    Adj R-Sq     0.3003
+              Coeff Var           130.36384                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1       -0.02483        0.00237     -10.48      <.0001
+     IS_LNBTD       1        0.01192        0.00497       2.40      0.0165
+     IS_LPBTD       1        0.00676        0.00529       1.28      0.2012
+     PTCF           1        1.01853        0.01608      63.35      <.0001
+     LN_PTCF        1        0.02768        0.02897       0.96      0.3394
+     LP_PTCF        1       -0.18061        0.03437      -5.26      <.0001
+     PTACC          1        0.75448        0.01997      37.77      <.0001
+     LN_PTACC       1       -0.02348        0.03499      -0.67      0.5022
+     LP_PTACC       1       -0.31607        0.04004      -7.89      <.0001
