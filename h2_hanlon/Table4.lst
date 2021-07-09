@@ -1,13 +1,12 @@
                                  The SAS System                                1
-                                               Friday, July  2, 2021 07:33:00 PM
+                                             Thursday, July  8, 2021 08:28:00 PM
 
                                The REG Procedure
                                  Model: MODEL1
                         Dependent Variable: PTBI_AHEAD 
 
-             Number of Observations Read                      18518
-             Number of Observations Used                      16409
-             Number of Observations with Missing Values        2109
+                    Number of Observations Read       10032
+                    Number of Observations Used       10032
 
 
                               Analysis of Variance
@@ -15,14 +14,14 @@
                                      Sum of           Mean
  Source                   DF        Squares         Square    F Value    Pr > F
 
- Model                     2      132.11275       66.05637    3417.24    <.0001
- Error                 16406      317.13343        0.01933                     
- Corrected Total       16408      449.24618                                    
+ Model                     2       96.41338       48.20669    3012.88    <.0001
+ Error                 10029      160.46593        0.01600                     
+ Corrected Total       10031      256.87931                                    
 
 
-              Root MSE              0.13903    R-Square     0.2941
-              Dependent Mean        0.10617    Adj R-Sq     0.2940
-              Coeff Var           130.95059                       
+              Root MSE              0.12649    R-Square     0.3753
+              Dependent Mean        0.13293    Adj R-Sq     0.3752
+              Coeff Var            95.15546                       
 
 
                               Parameter Estimates
@@ -30,19 +29,18 @@
                            Parameter       Standard
      Variable      DF       Estimate          Error    t Value    Pr > |t|
 
-     Intercept      1       -0.02291        0.00190     -12.04      <.0001
-     PTCF           1        1.00269        0.01218      82.30      <.0001
-     PTACC          1        0.69660        0.01484      46.94      <.0001
+     Intercept      1       -0.01871        0.00233      -8.03      <.0001
+     PTCF           1        1.05275        0.01356      77.62      <.0001
+     PTACC          1        0.82526        0.01695      48.69      <.0001
                                  The SAS System                                2
-                                               Friday, July  2, 2021 07:33:00 PM
+                                             Thursday, July  8, 2021 08:28:00 PM
 
                                The REG Procedure
                                  Model: MODEL1
                         Dependent Variable: PTBI_AHEAD 
 
-             Number of Observations Read                      18518
-             Number of Observations Used                      16409
-             Number of Observations with Missing Values        2109
+                    Number of Observations Read       10032
+                    Number of Observations Used       10032
 
 
                               Analysis of Variance
@@ -50,14 +48,14 @@
                                      Sum of           Mean
  Source                   DF        Squares         Square    F Value    Pr > F
 
- Model                     8      135.06329       16.88291     881.27    <.0001
- Error                 16400      314.18289        0.01916                     
- Corrected Total       16408      449.24618                                    
+ Model                     8       97.76050       12.22006     769.75    <.0001
+ Error                 10023      159.11881        0.01588                     
+ Corrected Total       10031      256.87931                                    
 
 
-              Root MSE              0.13841    R-Square     0.3006
-              Dependent Mean        0.10617    Adj R-Sq     0.3003
-              Coeff Var           130.36384                       
+              Root MSE              0.12600    R-Square     0.3806
+              Dependent Mean        0.13293    Adj R-Sq     0.3801
+              Coeff Var            94.78356                       
 
 
                               Parameter Estimates
@@ -65,12 +63,12 @@
                            Parameter       Standard
      Variable      DF       Estimate          Error    t Value    Pr > |t|
 
-     Intercept      1       -0.02483        0.00237     -10.48      <.0001
-     IS_LNBTD       1        0.01192        0.00497       2.40      0.0165
-     IS_LPBTD       1        0.00676        0.00529       1.28      0.2012
-     PTCF           1        1.01853        0.01608      63.35      <.0001
-     LN_PTCF        1        0.02768        0.02897       0.96      0.3394
-     LP_PTCF        1       -0.18061        0.03437      -5.26      <.0001
-     PTACC          1        0.75448        0.01997      37.77      <.0001
-     LN_PTACC       1       -0.02348        0.03499      -0.67      0.5022
-     LP_PTACC       1       -0.31607        0.04004      -7.89      <.0001
+     Intercept      1       -0.02035        0.00297      -6.85      <.0001
+     IS_LNBTD       1        0.01223        0.00597       2.05      0.0405
+     IS_LPBTD       1     0.00000810        0.00645       0.00      0.9990
+     PTCF           1        1.07724        0.01848      58.28      <.0001
+     LN_PTCF        1       -0.01771        0.03156      -0.56      0.5746
+     LP_PTCF        1       -0.13331        0.03816      -3.49      0.0005
+     PTACC          1        0.89118        0.02356      37.83      <.0001
+     LN_PTACC       1       -0.07612        0.03867      -1.97      0.0490
+     LP_PTACC       1       -0.26767        0.04649      -5.76      <.0001
