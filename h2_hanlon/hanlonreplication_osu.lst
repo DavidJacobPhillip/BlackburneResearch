@@ -1,0 +1,66 @@
+                                 The SAS System                                1
+                                             Monday, August 16, 2021 10:17:00 PM
+
+                              The MEANS Procedure
+
+  Variable       N           Mean        Std Dev      25th Pctl         Median
+  ----------------------------------------------------------------------------
+  ptbi_p1    14923      0.0893989      0.1242137      0.0334942      0.0909310
+  ptbi       14923      0.1301129      0.0929081      0.0630356      0.1108967
+  ptcf       14923      0.1413320      0.1162274      0.0709727      0.1350050
+  ptacc      14923     -0.0105520      0.0957133     -0.0659922     -0.0238091
+  deftax     14923    0.000929058      0.0374203     -0.0135059    0.000285920
+  avta       14923        1726.55       11535.42     49.4910000    154.7075000
+  curtax     14923      0.1297060      0.1063363      0.0499018      0.1048200
+  ----------------------------------------------------------------------------
+
+                            Variable      75th Pctl
+                            -----------------------
+                            ptbi_p1       0.1557582
+                            ptbi          0.1738381
+                            ptcf          0.2069748
+                            ptacc         0.0300018
+                            deftax        0.0177683
+                            avta        579.9895000
+                            curtax        0.1820989
+                            -----------------------
+                                 The SAS System                                2
+                                             Monday, August 16, 2021 10:17:00 PM
+
+ 
+ Obs    _NAME_     _LABEL_                Intercept         lnbtd         lpbtd
+
+  1    Estimate    Parameter Estimate        -0.005         0.017         0.016
+  2    tValue      t Value                   -2.830         4.564         3.756
+  3                                            .             .             .   
+  4                                            .             .             .   
+  5                                            .             .             .   
+
+                                                               c        NObs
+ Obs         ptbi       ln_ptbi       lp_ptbi     Label2     Value2     Used
+
+  1         0.747        -0.101        -0.215                              .
+  2        58.107        -4.637        -8.172                              .
+  3          .             .             .       Adj R-Sq    0.2651        .
+  4          .             .             .                             14923
+  5          .             .             .                             14923
+                                 The SAS System                                3
+                                             Monday, August 16, 2021 10:17:00 PM
+
+ 
+Obs  _NAME_  _LABEL_             Intercept      lnbtd      lpbtd       ptcf
+
+ 1  Estimate Parameter Estimate     -0.015      0.011      0.006      0.801
+ 2  tValue   t Value                -7.774      2.727      1.461     62.681
+ 3                                    .          .          .          .   
+ 4                                    .          .          .          .   
+ 5                                    .          .          .          .   
+
+                                                                      c     NObs
+Obs    ln_ptcf    lp_ptcf      ptacc   ln_ptacc   lp_ptacc  Label2  Value2  Used
+
+ 1      -0.077     -0.159      0.552     -0.118     -0.216                     .
+ 2      -3.531     -5.968     34.940     -4.501     -6.898                     .
+ 3        .          .          .          .          .    Adj R-Sq 0.3080     .
+ 4        .          .          .          .          .                    14923
+ 5        .          .          .          .          .                    14923

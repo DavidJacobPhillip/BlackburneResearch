@@ -1,0 +1,318 @@
+                                 The SAS System                                1
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                              The MEANS Procedure
+
+                                               Lower                       Upper
+Variable            Mean       Std Dev      Quartile        Median      Quartile
+--------------------------------------------------------------------------------
+PTBI_AHEAD     0.0893989     0.1242137     0.0334942     0.0909310     0.1557582
+PTBI           0.1301129     0.0929081     0.0630356     0.1108967     0.1738381
+PTCF           0.1413320     0.1162274     0.0709727     0.1350050     0.2069748
+PTACC         -0.0105520     0.0957133    -0.0659922    -0.0238091     0.0300018
+DTE          0.000929058     0.0374203    -0.0135059   0.000285920     0.0177683
+avg_at           1726.55      11535.42    49.4910000   154.7075000   579.9895000
+CURTAX         0.1297060     0.1063363     0.0499018     0.1048200     0.1820989
+--------------------------------------------------------------------------------
+                                 The SAS System                                2
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               The CORR Procedure
+
+   5 With Variables:    PTBI_AHEAD PTBI       PTCF       PTACC      DTE        
+   5      Variables:    PTBI_AHEAD PTBI       PTCF       PTACC      DTE        
+
+
+                               Simple Statistics
+ 
+Variable           N        Mean     Std Dev      Median     Minimum     Maximum
+
+PTBI_AHEAD     14923     0.08940     0.12421     0.09093    -0.36072     0.42607
+PTBI           14923     0.13011     0.09291     0.11090     0.00427     0.48327
+PTCF           14923     0.14133     0.11623     0.13500    -0.18033     0.49348
+PTACC          14923    -0.01055     0.09571    -0.02381    -0.22937     0.36032
+DTE            14923   0.0009291     0.03742   0.0002859    -0.14638     0.11845
+
+
+                  Pearson Correlation Coefficients, N = 14923 
+                           Prob > |r| under H0: Rho=0
+ 
+                   PTBI_
+                   AHEAD          PTBI          PTCF         PTACC           DTE
+
+PTBI_AHEAD       1.00000       0.50960       0.47045      -0.07290      -0.06310
+                                <.0001        <.0001        <.0001        <.0001
+
+PTBI             0.50960       1.00000       0.58651       0.24412      -0.02669
+                  <.0001                      <.0001        <.0001        0.0011
+
+PTCF             0.47045       0.58651       1.00000      -0.62894      -0.03588
+                  <.0001        <.0001                      <.0001        <.0001
+
+PTACC           -0.07290       0.24412      -0.62894       1.00000       0.01041
+                  <.0001        <.0001        <.0001                      0.2037
+
+DTE             -0.06310      -0.02669      -0.03588       0.01041       1.00000
+                  <.0001        0.0011        <.0001        0.2037              
+
+
+                 Spearman Correlation Coefficients, N = 14923 
+                           Prob > |r| under H0: Rho=0
+ 
+                   PTBI_
+                   AHEAD          PTBI          PTCF         PTACC           DTE
+
+PTBI_AHEAD       1.00000       0.59689       0.49906      -0.03883      -0.09034
+                                <.0001        <.0001        <.0001        <.0001
+
+PTBI             0.59689       1.00000       0.58336       0.19037      -0.02943
+                  <.0001                      <.0001        <.0001        0.0003
+
+PTCF             0.49906       0.58336       1.00000      -0.60576      -0.03287
+                  <.0001        <.0001                      <.0001        <.0001
+
+PTACC           -0.03883       0.19037      -0.60576       1.00000      -0.01064
+                  <.0001        <.0001        <.0001                      0.1938
+
+DTE             -0.09034      -0.02943      -0.03287      -0.01064       1.00000
+                  <.0001        0.0003        <.0001        0.1938              
+                                 The SAS System                                3
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               Obs    descriptor
+
+                                1       LNBTD   
+                                 The SAS System                                4
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                              The MEANS Procedure
+
+                                               Lower                       Upper
+Variable            Mean       Std Dev      Quartile        Median      Quartile
+--------------------------------------------------------------------------------
+PTBI_AHEAD     0.1099664     0.1424693     0.0389844     0.1128728     0.1946866
+PTBI           0.1517442     0.1104999     0.0672678     0.1296130     0.2076879
+PTCF           0.1648600     0.1316903     0.0844265     0.1560741     0.2425974
+PTACC         -0.0116415     0.1115774    -0.0820689    -0.0270002     0.0446741
+avg_at           1024.99       6070.51    38.4625000   107.4600000   353.6725000
+DTE           -0.0493829     0.0338881    -0.0604027    -0.0362453    -0.0257877
+ROE            0.1410637     1.3730021     0.0761394     0.1356589     0.2032623
+MVE              2931.83      20209.98    57.2025000   204.1107001   803.8951875
+BM             0.4826750     0.5379330     0.2090856     0.3647569     0.6115554
+ETR            0.3890085     7.0519741     0.2795164     0.3634196     0.3998482
+CETR           0.8732436     8.6099003     0.3973632     0.4629968     0.5775808
+LEVERAGE       0.0756498    14.8794684     0.0010546     0.1115998     0.4904447
+SPECITEMS     -0.0117393     0.0442544    -0.0153027             0             0
+SALES          1.6014171     0.9187740     1.0280543     1.4023839     1.9253619
+SALESGROW              .             .             .             .             .
+NOA          496.0344891       2202.86    17.1820000    53.4120000   207.2350000
+NOAGROW                .             .             .             .             .
+--------------------------------------------------------------------------------
+                                 The SAS System                                5
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               Obs    descriptor
+
+                                1      SmallBTD 
+                                 The SAS System                                6
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                              The MEANS Procedure
+
+                                               Lower                       Upper
+Variable            Mean       Std Dev      Quartile        Median      Quartile
+--------------------------------------------------------------------------------
+PTBI_AHEAD     0.0848780     0.1191733     0.0320817     0.0873569     0.1481341
+PTBI           0.1209644     0.0875838     0.0553383     0.1036320     0.1642359
+PTCF           0.1310692     0.1111670     0.0652939     0.1262195     0.1935250
+PTACC         -0.0094182     0.0898963    -0.0607538    -0.0226097     0.0272160
+avg_at           1942.20      13817.48    51.1280000   161.9635000   597.7905000
+DTE            0.0016243     0.0105399    -0.0063123   0.000285920     0.0095415
+ROE            0.1441558     1.2207568     0.0718708     0.1226368     0.1756135
+MVE              2415.72      14606.69    49.4291250   176.0645000   737.4096250
+BM             0.8775126   103.9651830     0.3044581     0.4986142     0.7987654
+ETR            0.2742616    13.2770592     0.3350239     0.3756485     0.4000000
+CETR           0.0697232    34.6070871     0.3000000     0.3610526     0.4062194
+LEVERAGE       0.6506198     2.8039530     0.0371588     0.3327138     0.8120398
+SPECITEMS   -0.000489526     0.0480832             0             0             0
+SALES          1.5503045     0.9681893     0.9635275     1.3561537     1.8944567
+SALESGROW              .             .             .             .             .
+NOA              1025.92       6133.63    28.7200000   101.3550000   408.4540000
+NOAGROW                .             .             .             .             .
+--------------------------------------------------------------------------------
+                                 The SAS System                                7
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               Obs    descriptor
+
+                                1       LPBTD   
+                                 The SAS System                                8
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                              The MEANS Procedure
+
+                                               Lower                       Upper
+Variable            Mean       Std Dev      Quartile        Median      Quartile
+--------------------------------------------------------------------------------
+PTBI_AHEAD     0.0823985     0.1171314     0.0329770     0.0853783     0.1421047
+PTBI           0.1359365     0.0847980     0.0770258     0.1162764     0.1693871
+PTCF           0.1486028     0.1105240     0.0829141     0.1419920     0.2107987
+PTACC         -0.0128652     0.0954421    -0.0672072    -0.0255362     0.0276094
+avg_at           1780.93       7420.76    61.3565000   200.1782500   777.9027500
+DTE            0.0491546     0.0257436     0.0303094     0.0404801     0.0589221
+ROE            0.1507168     0.8041040     0.0931484     0.1355892     0.1902190
+MVE              2275.05       9738.46    69.8881875   249.0481250   946.5340000
+BM             0.7280146     9.0062451     0.2819299     0.4613622     0.7064878
+ETR            0.4051259     0.4909918     0.3499856     0.3792687     0.4008217
+CETR           0.2152201     0.2373697     0.1283920     0.2154904     0.2835562
+LEVERAGE       0.6587106     3.8418429     0.0862144     0.4337291     0.8912580
+SPECITEMS      0.0064299     0.0796451             0             0             0
+SALES          1.3927658     1.1051239     0.8435777     1.2078314     1.6562457
+SALESGROW              .             .             .             .             .
+NOA              1015.56       3915.22    38.4190000   138.4620000   578.0400000
+NOAGROW                .             .             .             .             .
+--------------------------------------------------------------------------------
+                                 The SAS System                                9
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+                    Number of Observations Read       14923
+                    Number of Observations Used       14923
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     1       59.79057       59.79057    5234.25    <.0001
+ Error                 14921      170.44175        0.01142                     
+ Corrected Total       14922      230.23232                                    
+
+
+              Root MSE              0.10688    R-Square     0.2597
+              Dependent Mean        0.08940    Adj R-Sq     0.2596
+              Coeff Var           119.55203                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1     0.00075071        0.00151       0.50      0.6181
+     PTBI           1        0.68132        0.00942      72.35      <.0001
+                                 The SAS System                               10
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+                    Number of Observations Read       14923
+                    Number of Observations Used       14923
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     5       61.09925       12.21985    1077.75    <.0001
+ Error                 14917      169.13307        0.01134                     
+ Corrected Total       14922      230.23232                                    
+
+
+              Root MSE              0.10648    R-Square     0.2654
+              Dependent Mean        0.08940    Adj R-Sq     0.2651
+              Coeff Var           119.10814                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1       -0.00543        0.00192      -2.83      0.0047
+     IS_LNBTD       1        0.01747        0.00383       4.56      <.0001
+     IS_LPBTD       1        0.01560        0.00415       3.76      0.0002
+     PTBI           1        0.74657        0.01285      58.11      <.0001
+     LN_PTBI        1       -0.10121        0.02183      -4.64      <.0001
+     LP_PTBI        1       -0.21523        0.02634      -8.17      <.0001
+                                 The SAS System                               11
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+                    Number of Observations Read       14923
+                    Number of Observations Used       14923
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     2       69.89406       34.94703    3251.94    <.0001
+ Error                 14920      160.33826        0.01075                     
+ Corrected Total       14922      230.23232                                    
+
+
+              Root MSE              0.10367    R-Square     0.3036
+              Dependent Mean        0.08940    Adj R-Sq     0.3035
+              Coeff Var           115.95837                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1       -0.01165        0.00152      -7.69      <.0001
+     PTCF           1        0.75074        0.00939      79.94      <.0001
+     PTACC          1        0.47876        0.01140      41.98      <.0001
+                                 The SAS System                               12
+                                             Monday, August 16, 2021 10:38:00 PM
+
+                               The REG Procedure
+                                 Model: MODEL1
+                        Dependent Variable: PTBI_AHEAD 
+
+                    Number of Observations Read       14923
+                    Number of Observations Used       14923
+
+
+                              Analysis of Variance
+ 
+                                     Sum of           Mean
+ Source                   DF        Squares         Square    F Value    Pr > F
+
+ Model                     8       70.99245        8.87406     831.12    <.0001
+ Error                 14914      159.23986        0.01068                     
+ Corrected Total       14922      230.23232                                    
+
+
+              Root MSE              0.10333    R-Square     0.3084
+              Dependent Mean        0.08940    Adj R-Sq     0.3080
+              Coeff Var           115.58375                       
+
+
+                              Parameter Estimates
+ 
+                           Parameter       Standard
+     Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+     Intercept      1       -0.01496        0.00192      -7.77      <.0001
+     IS_LNBTD       1        0.01057        0.00388       2.73      0.0064
+     IS_LPBTD       1        0.00615        0.00421       1.46      0.1440
+     PTCF           1        0.80141        0.01279      62.68      <.0001
+     LN_PTCF        1       -0.07707        0.02183      -3.53      0.0004
+     LP_PTCF        1       -0.15850        0.02656      -5.97      <.0001
+     PTACC          1        0.55244        0.01581      34.94      <.0001
+     LN_PTACC       1       -0.11789        0.02619      -4.50      <.0001
+     LP_PTACC       1       -0.21556        0.03125      -6.90      <.0001
