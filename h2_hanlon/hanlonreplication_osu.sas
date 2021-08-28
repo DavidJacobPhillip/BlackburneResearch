@@ -6,8 +6,8 @@ libname home '.';
 
 * First, load in the macros I want to use;
 
-%include '/home/oregonstate/tblackb/mymacros/compustatutilities.sas';
-%include '/home/oregonstate/tblackb/mymacros/Winsorize_Macro.sas';
+%include '../macros/hanlon_paper/compustatutilities.sas';
+%include '../macros/hanlon_paper/Winsorize_Macro.sas';
 
 %getcompfunda(dsetout=compdata(where=(not missing(at))),startyear=1993,endyear=2001);
 
@@ -18,11 +18,13 @@ data compdata;
 			compdata(firstobs=2
 					 keep=gvkey fyear fyr pi mii at
 					 rename=(gvkey=gvkey_p1 fyear=fyear_p1 fyr=fyr_p1 pi=pi_p1 mii=mii_p1 at=at_p1));
-	sic2d=floor(sic/100);
+	sic2d=floor(sic/100);/* Done */
 	m1=.; 
     	if gvkey=lag(gvkey) and fyear-1=lag(fyear) and fyr=lag(fyr) then m1=1;
-	avta=m1*(at+lag(at))/2;
-	if missing(tlcf) then tlcf=0;
+	avta=m1*(at+lag(at))/2;/* Done */
+
+	if missing(tlcf) then tlcf=0;	/* Done */
+
 	if not missing(mii) then pti=(pi-mii);
 		else pti=pi;
 	if avta>0 then ptbi=pti/avta;
@@ -53,14 +55,14 @@ data hanlondata;
 	if not missing(mve);
 	if fic="USA";	
 	if not missing(ptbi);
-	*if not missing(ptbi_p1);
-	*if not missing(ptcf);
-	*if not missing(deftax);
-	*if ptbi>0;
-	*if curtax>0;
-	*if tlcf=0;
-	*if 60 <= sic2d <= 69 then delete;
-	*	else if sic2d = 49 then delete;
+	if not missing(ptbi_p1);
+	if not missing(ptcf);
+	if not missing(deftax);
+	if ptbi>0;
+	if curtax>0;
+	if tlcf=0;
+	if 60 <= sic2d <= 69 then delete;
+		else if sic2d = 49 then delete;
 	include=1;
 run;
 
@@ -68,7 +70,7 @@ data home.hanlondata;
 	set hanlondata;
 run;
 
-/*
+
 %winsor(dsetin=hanlondata,dsetout=hanlondata,byvar=none,vars=ptbi ptbi_p1 deftax curtax ptcf ptacc,type=winsor,pctl=1 99);
 
 proc rank data=hanlondata out=hanlondata groups=5;
@@ -91,11 +93,11 @@ data hanlondata;
 	lp_ptcf=lpbtd*ptcf;
 	drop defvar_rank;
 run;
-/
+
 data home.hanlondata;
 	set hanlondata;
 run;
-/*
+
 ods html file='Table1PanelB.xls';
 proc means data=hanlondata n mean mean std p25 median p75;
 	var ptbi_p1 ptbi ptcf ptacc deftax avta curtax;
@@ -160,4 +162,4 @@ ods html file='Table3PanelC.xls';
 proc print data=table3panelc;
 run;
 ods html close;
-*/
+
