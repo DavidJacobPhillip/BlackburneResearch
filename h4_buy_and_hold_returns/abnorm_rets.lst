@@ -1,0 +1,22 @@
+                                 The SAS System                                1
+                                          Sunday, September 12, 2021 10:02:00 PM
+
+                                               STOCK_
+                           Obs      PERMNO      RET
+
+                            1        12369    1.07456
+                            2        92203    1.23861
+                                 The SAS System                                2
+                                          Sunday, September 12, 2021 10:02:00 PM
+
+               Obs     SUM_EW      SUM_VW       EWR        VWR
+
+                1     0.077407    0.051914    1.19511    1.12697
+                                 The SAS System                                3
+                                          Sunday, September 12, 2021 10:02:00 PM
+
+                STOCK_
+Obs    PERMNO    RET     SUM_EW    SUM_VW     EWR      VWR     EW_BHAR   VW_BHAR
+
+ 1      12369  1.07456  0.077407  0.051914  1.19511  1.12697  -0.12055  -0.05242
+ 2      92203  1.23861  0.077407  0.051914  1.19511  1.12697   0.04351   0.11164
